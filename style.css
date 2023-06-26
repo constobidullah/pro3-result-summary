@@ -4,7 +4,7 @@ body {
     border: 0;
 }
 
-main{
+main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -36,11 +36,12 @@ main{
 .result-output-text p {
     text-align: center;
 }
-.reaction-container{
+
+.reaction-container {
     width: 100%;
 }
 
-.reaction-container>h2{
+.reaction-container>h2 {
     font-size: 2rem;
     text-align: center;
     margin: 0;
@@ -98,6 +99,45 @@ main{
     border-radius: 30px;
 }
 
-.continue-btn button:hover{
+.continue-btn button:hover {
     background-image: linear-gradient(rgb(164, 164, 236), rgb(103, 103, 211));
+}
+
+
+@media screen and (max-width: 720px) and (min-width: 200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    #result-container {
+        width: 100%;
+        background-image: linear-gradient(rgb(138, 138, 245), rgb(71, 71, 241));
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .result-number {
+        width: 100px;
+        height: 100px;
+        background-image: radial-gradient(blue, black);
+        border-radius: 50%;
+        padding: 35px 30px;
+        margin: 0 auto;
+        line-height: 0;
+        font-size: 1.5rem;
+    }
+
 }
