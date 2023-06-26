@@ -114,14 +114,12 @@ main {
     }
 
     main {
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1em;
+        /* gap: 1em; */
     }
 
     #result-container {
-        width: 100%;
         background-image: linear-gradient(rgb(138, 138, 245), rgb(71, 71, 241));
         color: white;
         text-align: center;
@@ -141,15 +139,17 @@ main {
         font-size: 1.5rem;
     }
 
+    .reaction-container {
+        width: 100%;
+    }
 
     .reaction-item {
-        width: 100%;
         background-color: rgb(250, 240, 228);
         height: auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 3px 5px;
+        margin: 3px auto;
         border-radius: 5px;
     }
 }
