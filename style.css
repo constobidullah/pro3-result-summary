@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+#result-container {
+    width: 100%;
+    background-image: linear-gradient(rgb(138, 138, 245), rgb(71, 71, 241));
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    /* margin: 1em; */
+}
+
+.result-number {
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(blue, black);
+    border-radius: 50%;
+    padding: 35px 30px;
+    margin: 0 auto;
+    line-height: 0;
+    font-size: 1.5rem;
+}
+
+.result-output-text p {
+    text-align: center;
+}
+.reaction-container{
+    width: 100%;
+}
+
+.reaction-container>h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    color: rgb(171, 95, 241);
+}
+
+.reaction-item {
+    background-color: rgb(250, 240, 228);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3px 5px;
+    border-radius: 5px;
+}
+
+.reaction-item:nth-child(2) {
+    background-color: rgb(245, 245, 174);
+}
+
+.reaction-item:nth-child(3) {
+    background-color: rgb(253, 214, 253);
+}
+
+.reaction-item:nth-child(4) {
+    background-color: rgb(183, 217, 245);
+}
+
+.reaction-item span:nth-child(1) {
+    font-size: 0.9rem;
+}
+
+.reaction-item span:nth-child(2) {
+    font-weight: 700;
+    color: rgb(82, 80, 55);
+}
+
+.reaction-item p {
+    font-weight: 800;
+}
+
+.continue-btn {
+    width: 100%;
+}
+
+.continue-btn button {
+    width: 100%;
+    background-color: rgb(62, 62, 122);
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+}
+
+.continue-btn button:hover{
+    background-image: linear-gradient(rgb(164, 164, 236), rgb(103, 103, 211));
+}
